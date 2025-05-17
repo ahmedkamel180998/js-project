@@ -148,6 +148,39 @@
             padding: 1rem 1rem 0;
         }
     </style>
+    <style>
+        /* MEDIA QUERIES */
+        @media (max-width: 768px) {
+    .product-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .product-card {
+        padding: 0.75rem !important;
+    }
+    
+    .quantity-input {
+        width: 40px;
+    }
+    
+    .quantity-btn {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .summary-card {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-image {
+        width: 70px;
+        height: 70px;
+    }
+}
+    </style>
 </head>
 
 <body>
@@ -202,28 +235,28 @@
                     <div class="d-flex flex-column gap-3">
                         <!-- PRODUCT 1 -->
                         <div class="product-card p-3 shadow-sm">
-                            <div class="row align-items-center">
-                                <div class="col-md-2">
+                            <div class="row align-items-center g-3">
+                                <div class="col-md-2 col-4">
                                     <img src="imgs/the_simple_path_to_wealth.jpg" alt="Product Image"
                                         class="product-image">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-8">
                                     <h5 class="product-name mb-1">The Simple Path To Wealth</h5>
                                     <p class="product-description text-muted mb-0">A book about personal finance and
                                         investing.</p>
                                     <!-- <span class="discount-badge mt-2">20% OFF</span> -->
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-6">
                                     <div class="d-flex align-items-center gap-2">
                                         <button class="quantity-btn" onclick="updateQuantity(1, -1)">-</button>
                                         <input type="number" class="quantity-input" value="1" min="1">
                                         <button class="quantity-btn" onclick="updateQuantity(1, 1)">+</button>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-4">
                                     <span class="fw-bold">$129.99</span>
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col-md-1 col-2">
                                     <i class="bi bi-trash remove-btn"></i>
                                 </div>
                             </div>
@@ -231,26 +264,26 @@
                         <!-- PRODUCT 2 -->
                         <div class="product-card p-3 shadow-sm">
                             <div class="row align-items-center">
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-4">
                                     <img src="imgs/the_5_am_club.jpg" alt="Product Image" class="product-image">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-8">
                                     <h5 class="product-name mb-1">The 5 AM Club</h5>
                                     <p class="product-description text-muted mb-0">A book about productivity and
                                         success.</p>
                                     <span class="discount-badge mt-2">20% OFF</span>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-6">
                                     <div class="d-flex align-items-center gap-2">
                                         <button class="quantity-btn" onclick="updateQuantity(1, -1)">-</button>
                                         <input type="number" class="quantity-input" value="1" min="1">
                                         <button class="quantity-btn" onclick="updateQuantity(1, 1)">+</button>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-4">
                                     <span class="fw-bold">$139.99</span>
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col-md-1 col-2">
                                     <i class="bi bi-trash remove-btn"></i>
                                 </div>
                             </div>
@@ -258,28 +291,28 @@
                         <!-- PRODUCT 3 -->
                         <div class="product-card p-3 shadow-sm">
                             <div class="row align-items-center">
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-4">
                                     <img src="imgs/great_big_beautiful_life.jpg" alt="Product Image"
                                         class="product-image">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-8">
                                     <h5 class="product-name mb-1">Great Big beautiful Life</h5>
                                     <p class="product-description text-muted mb-0">
                                         A book about positivity and motivation.
                                     </p>
                                     <!-- <span class="discount-badge mt-2">20% OFF</span> -->
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-6">
                                     <div class="d-flex align-items-center gap-2">
                                         <button class="quantity-btn" onclick="updateQuantity(1, -1)">-</button>
                                         <input type="number" class="quantity-input" value="1" min="1">
                                         <button class="quantity-btn" onclick="updateQuantity(1, 1)">+</button>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-4">
                                     <span class="fw-bold">$109.99</span>
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col-md-1 col-2">
                                     <i class="bi bi-trash remove-btn"></i>
                                 </div>
                             </div>
@@ -287,27 +320,27 @@
                         <!-- PRODUCT 4 -->
                         <div class="product-card p-3 shadow-sm">
                             <div class="row align-items-center">
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-4">
                                     <img src="imgs/atomic_habits.jpg" alt="Product Image" class="product-image">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-8">
                                     <h5 class="product-name mb-1">Atomic Habits</h5>
                                     <p class="product-description text-muted mb-0">
                                         A book about building good habits and breaking bad ones.
                                     </p>
                                     <span class="discount-badge mt-2">20% OFF</span>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-6">
                                     <div class="d-flex align-items-center gap-2">
                                         <button class="quantity-btn" onclick="updateQuantity(1, -1)">-</button>
                                         <input type="number" class="quantity-input" value="1" min="1">
                                         <button class="quantity-btn" onclick="updateQuantity(1, 1)">+</button>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-4">
                                     <span class="fw-bold">$159.99</span>
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col-md-1 col-2">
                                     <i class="bi bi-trash remove-btn"></i>
                                 </div>
                             </div>
@@ -327,11 +360,10 @@
                             <span class="text-muted">Discount</span>
                             <span class="text-success">-$25.99</span>
                         </div>
-                        <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
                             <span class="text-muted">Shipping</span>
                             <span class="text-success">Free</span>
                         </div>
-                        <hr>
                         <div class="d-flex justify-content-between mb-4">
                             <span class="fw-bold">Total</span>
                             <span class="fw-bold">$603.97</span>
